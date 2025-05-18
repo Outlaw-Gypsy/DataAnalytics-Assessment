@@ -22,7 +22,7 @@ This repository contains SQL queries written to support business analysis and de
 
 **Approach:**
 
-* Joined the accounts table to the plans table to determine whether each plan is a savings or investment product.
+* Joined the savings_savingsaccount and users_customuser table to the plans_plan table to determine whether each plan is a savings or investment product.
 * Grouped data by `owner_id` to count the number of savings and investment plans per customer.
 * Used `SUM(CASE WHEN ...)` logic to count each type of plan accurately.
 * Filtered for customers having at least one of each product.
